@@ -66,6 +66,7 @@ console.log(typeof rate); //undefined
 
 // let,const,var =>  it is a keyword used to decalre the variables
 //automatically decalring varibales
+
 firstName="Afreen"
 firstName="zainaba" //automatically decalring the variable with same name which changes the value
 
@@ -77,15 +78,18 @@ var digit=20; //using var decalring the variable with same name which changes th
 
 // to solve the above problems we use let
 // console.log(valPi)//this shows error.  hoistsig is cannot be done using let
-// let val = null;
-// val = 10;
+// le
 let valPi=3.14;
 // let valPi;  //we cannot re dececlare a variable
 console.log(valPi)
 valPi=50; // using let we can chnage the value of variable to solve this problem we use const
 console.log(valPi)
 
-//declaeing vaRIablkr udsing const
+
+
+
+
+//declaring  variable using const
 // let a;
 // a = 20;
 
