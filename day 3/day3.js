@@ -44,4 +44,38 @@ switch (a) {
 // let x = 5;
 // x++;
 // let z = x;
+// y= x++ + z (10)
 // y= ++x + z (11)
+
+// 10 + 10 = 20
+// 10 + '10' = '1010'
+// '10' + '10' = '1010'
+
+
+// +'10' = 10 // converted to number
+// '10' + +'10' = '1010'
+// +'10a' = Nan
+// '10' + +'10a' = '10NaN'
+// +'10a' + +'10a' = Nan
+// +'10a' + +'10' = Nan10
+
+// for(initilization; condition; incrementaion){
+
+// }
+
+
+// a = 11
+// c = 45
+
+
+
+
+
+// while()
+
+
+// do while() 
+
+// for in 
+// for of 
+// forEach
