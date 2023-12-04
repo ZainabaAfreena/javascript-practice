@@ -54,36 +54,36 @@
 // }
 // console.log(`factorail of number ${n} is ${sum}`)
 
-// 8.square of a number
+// 
 
 // 10. prime number:-
-let num = 23;
-for (let i = 2; i < num; i++) {
-    if(num % i == 0){
-        console.log(` ${num} is a Prime Number`);
-        break;
-    }
-    else{
-        console.log(`${num} is Not a Prime Number`);
-        break;
-    }
-}
+// let num = 23;
+// for (let i = 2; i < num; i++) {
+//     if(num % i == 0){
+//         console.log(` ${num} is a Prime Number`);
+//         break;
+//     }
+//     else{
+//         console.log(`${num} is Not a Prime Number`);
+//         break;
+//     }
+// }
 
-let n = 23;
-let flag = true;
+// let n = 23;
+// let flag = true;
 
-for(let i = 2; i < n; i++){
-    if(n%i === 0){
-        flag = false;
-        break;
-    }
-}
+// for(let i = 2; i < n; i++){
+//     if(n%i === 0){
+//         flag = false;
+//         break;
+//     }
+// }
 
-if(flag){
-    console.log('Is Prime Number ');
-} else {
-    console.log('Not Prime Number ');
-}
+// if(flag){
+//     console.log('Is Prime Number ');
+// } else {
+//     console.log('Not Prime Number ');
+// }
 
 // function Inputformuser(){
 //     let n = 23;
@@ -110,5 +110,3 @@ if(flag){
 // }
 
 // console.log(Logic(7));
-
-
