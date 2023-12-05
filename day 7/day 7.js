@@ -21,6 +21,8 @@ let aa=course.trimStart()//-->Removes whitespace from the beginning or end of a 
 let bb=course.trimEnd()
 let cc=course.trim()
 console.log(course);
+
+
 console.log('course', course.length)
 console.log('trimStart', aa.length)
 console.log('trimEnd', bb.length)
