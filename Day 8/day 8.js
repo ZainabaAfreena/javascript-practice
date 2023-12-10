@@ -4,13 +4,12 @@ function add(){
     console.log("hi6ehuy");
 }
 add();
+
 let num1=10;
  function afreen(n){
     console.log("my name is",n)
  }
  afreen(num1)
-let  
-
 
 function add(n1, n2){
   console.log(n1+n2);
@@ -35,6 +34,8 @@ add(260, 40);
 div(270, 40);
 add(280, 40);
 
+
+
 function naqhi(project1, project2) {
   console.log(project1,'is done')
   console.log(project2,'is done')
@@ -49,7 +50,7 @@ function hisham(content, whatappGroup, report) {
 }
 
 function gocool(design, video) {
-  console.log(design, "is done");
+  console.log(design, "is done")
   console.log(video, "is done");
 }
 console.log(naqhi());
@@ -59,7 +60,7 @@ console.log(naqhi());
 
 
 
-function add(){console.log('function defination')}  //defing function 
+// function add(){console.log('function defination')}  //defing function 
 
 
 let a = 20; //varibale 
@@ -115,8 +116,8 @@ let naqhi3 = ()=>{
 }
 
 
-console.log(nn())
-console.log(naqhi3())
+// console.log(nn())
+// console.log(naqhi3())
 
 
 

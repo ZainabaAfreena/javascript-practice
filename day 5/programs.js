@@ -54,7 +54,7 @@
 // }
 // console.log(`factorail of number ${n} is ${sum}`)
 
-// 
+
 
 // 10. prime number:-
 // let num = 23;
@@ -106,6 +106,8 @@
 //     console.log("Is Prime Number ");
 //   } else {
 //     console.log("Not Prime Number ");
+
+
 //   }
 // }
 

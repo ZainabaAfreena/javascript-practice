@@ -27,3 +27,7 @@ console.log('course', course.length)
 console.log('trimStart', aa.length)
 console.log('trimEnd', bb.length)
 console.log('trim', cc.length)
+
+
+
+
