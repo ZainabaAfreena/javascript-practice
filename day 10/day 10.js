@@ -1,6 +1,6 @@
 // let a = "hello"; //string
 // console.log(a[0]);
-// let car = ["BMW", "Benz", "Audi",]; //array
+let car = ["BMW", "Benz", "Audi",]; //array
 // console.log(car);
 // console.log(car[1]);
 // car[1] = "KIA";
@@ -22,9 +22,8 @@
 // console.log(car)
 // console.log(car[1]);
 
-// let num = [44, 50, 30, 60, 40, 60];
+let num = [44, 50, 30, 60, 40, 60];
 // console.log(num[num.length-1]);//will should index of last number
-
 // for (let i = 0; i < num.length; i++) {
 //   console.log(num[i])
 // }
@@ -49,4 +48,6 @@
 // num.forEach(function(value, index,arr){
 //     console.log(value,index,arr);
 // })
+
+
 

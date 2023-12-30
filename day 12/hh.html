@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    span {
+      display: none;
+      color: red;
+    }
+  </style>
+  <body>
+    <h1>111 <span>1234</span> 22</h1>
+    <h1>11</h1>
+    <h2 id="idTag">2</h2>
+    <h2 class="classTag">3</h2>
+    <h2 class="classTag">4</h2>
+    <input type="text" value="nnnn" id="name">
+    <script>
+      let getName = document.querySelector("#name");   //let a = 10;
+      console.log(getName.value); //To Change Content//  log(aa)
+
+
+      let aa = 10;
+      console.log(aa);
+      aa = 30;
+      console.log(aa);
+
+      let selectTag1 = document.querySelector("h1");   //let a = 10;
+      console.log("textContent", selectTag1.textContent); //To Change Content//  log(aa)
+      
+      selectTag1.textContent = getName.value  //aa = 30 // reinitialization
+      console.log(selectTag1.textContent);
+
+        console.log('innerText', selectTag1.innerText);
+        console.log('outerText', selectTag1.outerText);
+
+      console.log("innerHTML", selectTag1.innerHTML); //-To Change Tag//
+        console.log('outerHTML', selectTag1.outerHTML);
+
+        let selectTag = document.querySelectorAll("h1");
+        for (let i of selectTag) {
+          console.log(i);
+        }
+
+        let selectId = document.querySelector("#idTag");
+        let selectClass = document.querySelector(".classTag");
+
+        console.log(selectTag);
+        console.log(selectId);
+        console.log(selectClass);
+
+        let getId = document.getElementById("idTag");
+        console.log(getId);
+
+        let getClass = document.getElementsByClassName("classTag");
+        console.log(getClass);
+        for (let i of getClass) {
+          console.log(i);
+        }
+        let getTag = document.getElementsByTagName("h1");
+        console.log(getTag);
+        for (let i of getTag) {
+          console.log(i);
+        }
+    </script>
+  </body>
+</html>

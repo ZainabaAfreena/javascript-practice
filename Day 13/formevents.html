@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form action="">
+        <input type="text" id="name" onchange="console.log(event.target.value)">
+        <input type="number" id="phone" oninput="console.log(event.target.value)">
+    </form> -->
+
+    <form>
+        <input type="text" id="name1">
+        <input type="text" id="phone">
+        <input type="submit" id="submitBtn" value="submit">
+    </form>
+
+    <div>Display My Data:
+        <div>Name: <span id="showName"></span></div>
+        <div>Phone:<span id="showPhone"></span></div>
+    </div>
+
+
+
+    <script>
+        // get the data
+        let getName = document.querySelector('#name');
+        let getPhone = document.querySelector('#phone');
+
+        // show the data
+        let showName = document.querySelector('#showName');
+        let showPhone = document.querySelector('#showPhone');
+
+        document.querySelector('#submitBtn').addEventListener('click', function () {
+            event.preventDefault();
+            
+            showName.textContent = getName.value;
+            showPhone.textContent = getPhone.value;
+        })
+    </script>
+</body>
+
+</html>

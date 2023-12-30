@@ -1,4 +1,4 @@
-// conditional statement ()
+;l// conditional statement ()
 // if()--> if the condition is true then it will run the statement inside the block else it will come out of the block
 // else if()-->if the previos condition is false then it will take the else condition
 // eg:

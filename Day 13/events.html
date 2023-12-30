@@ -1,0 +1,88 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btn {
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+        padding: 5px 10px;
+        transition: all .5s ease-in-out;
+    }
+
+    #bulb {
+        width: 50px;
+        height: 100px;
+        background-color: rgb(252, 252, 87);
+        border-radius: 50px;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid black;
+    }
+
+    #bulb div {
+        background: #000;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(2, 2, 2);
+    }
+
+    #switch {
+
+        padding: 5px 10px;
+    }
+</style>
+
+<body>
+    <button id="btn">Unsubscribe</button>
+
+
+    <div id="bulb">
+        <div>
+        </div>
+    </div>
+    <br>
+
+    <button id="switch">On</button>
+</body>
+<script>
+    let btn = document.querySelector('#btn');
+    btn.addEventListener('click', function () {
+        if (btn.textContent === "Unsubscribe") {
+            btn.textContent = "Subscribe"
+            btn.style.color = "black";
+            btn.style.backgroundColor = "gray"
+        } else {
+            btn.textContent = "Unsubscribe"
+            btn.style.color = "white";
+            btn.style.backgroundColor = "black"
+        }
+    });
+
+    let switchBtn = document.querySelector('#switch');
+    let bulb = document.querySelector('#bulb');
+    let isOn = true;
+    switchBtn.addEventListener('click', function () {
+        if (isOn) {
+            switchBtn.textContent = "Off";
+            bulb.style.backgroundColor = "white"
+            isOn = false
+        } else {
+            switchBtn.textContent = "On"
+            bulb.style.backgroundColor = "yellow"
+
+            isOn = true
+        }
+    });
+
+</script>
+
+</html>

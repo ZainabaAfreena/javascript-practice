@@ -1,4 +1,4 @@
-//  javascript: a javascript is a intrepreted language, which is used for advanced website 
+ //javascript: a javascript is a intrepreted language, which is used for advanced website 
 // for ex form validation. and it is synchronous and single treaded language  
 // wheree it can be asynchronous by usig some functions like 
 //  setInterval(), setTimeout(), Promises(), fetch(), async await
@@ -13,7 +13,7 @@
 
 // not allowed examples:
 //   if = 20;
-//   for=20;
+//   for=20;+
 //   1name=45;
 //   %name=45;
 //   #name=56;
@@ -89,7 +89,7 @@ console.log(valPi)
 
 
 
-\
+
 
 
 
