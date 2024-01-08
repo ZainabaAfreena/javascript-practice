@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #naqhi{
+        color: yellow;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <!-- <div>hi</div>-->
+
+    <button onclick="deleteThis()">click me</button> 
+<!-- 
+   <div>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+   </div> -->
+    <!-- <div id="naqhi">Hello</div> -->
+    <!-- <input  readonly>Hello</input> -->
+    <script>
+        // // creating element
+        let divTag = document.createElement('div');
+        let pTag = document.createElement('p');
+        // let sTag = document.createElement('span');
+
+        // // add content, attribute or properties
+        divTag.textContent = "<p></p>";
+        // divTag.setAttribute('id', 'naqhi');
+
+        // pTag.textContent = "p hello"
+        // sTag.textContent = "span  hello";
+        // sTag.style.backgroundColor = "red"
+
+        // // append (adding to html document)
+
+        document.body.appendChild(divTag);
+        // document.querySelector('div').appendChild(pTag); 
+        // document.querySelector('p').appendChild(sTag);
+
+        for(let i = 0; i<=4; i++){
+        divTag.innerHTML += `<p>${i}</p>`;
+        divTag.innerHTML += `<p>${i}</p>`;
+            console.log(i)
+        }
+        
+        // // remove the element
+        function deleteThis() {
+            document.querySelector('div').removeAttribute('id')
+            // document.body.removeChild(document.querySelector('div'));
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+
+<!-- <h1>hello</h1> -->

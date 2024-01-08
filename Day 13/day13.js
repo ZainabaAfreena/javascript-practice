@@ -45,24 +45,25 @@
 //     <title>HTML</title>
 // </head>
 
-// <body>
-//     <div>
+{/* <body>
+    <div>
 
-//         <input type="text" id="inputField" placeholder="Type something..." />
-//         <p>You typed: <span id="output"></span></p>
-//     </div>
+        <input type="text" id="inputField" placeholder="Type something..." />
+        <p>You typed: <span id="output"></span></p>
+    </div>
     
-//     <script>
-//         const inputField = document.getElementById("inputField");
-//         const output = document.getElementById("output");
+    <script>
+        const inputField = document.getElementById("inputField");
+        const output = document.getElementById("output");
 
 
-//         inputField.addEventListener("input", function (event) {
-//             output.textContent = event.target.value;
-//             console.log(event.target.value)
-//         });   
-//     </script>
-// </body>
+        inputField.addEventListener("input", function (event) {
+            output.textContent = event.target.value;
+            console.log(event.target.value)
+            });   
+    </script>
+        // </body> */}
+
 
 // </html> -->
 // <!-- <input type="text" id="inputField" placeholder="Type here">

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #box1 {
+        width: 500px;
+        height: 100px;
+        background-color: green;
+        border: 2px solid;
+      }
+      #box2 {
+        max-width: 500px;
+        height: 100px;
+        background-color: yellow;
+        border: 2px solid;
+      }
+      #box3 {
+        width: 500px;
+        height: 100px;
+        background-color: blue;
+        border: 2px solid;
+      }
+      #box4 {
+        max-width: 500px;
+        height: 100px;
+        background-color: pink;
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body class="box">
+    <div id="box1" onclick="clickMe('green')">box1</div>
+    <div id="box2" onclick="clickMe('yellow')">box2</div>
+    <div id="box3" onclick="clickMe('blue')">box3</div>
+    <div id="box4" onclick="clickMe('pink')">box4</div>
+
+    <script>
+      let boxa = document.querySelector("#box1");
+      let boxb = document.querySelector("#box2");
+      let boxc = document.querySelector("#box3");
+      let boxd = document.querySelector("#box4");
+
+      function clickMe(color) {
+
+        
+        document.body.style.backgroundColor=color ;
+        console.log(color);
+      }
+    </script>
+  </body>
+</html>
