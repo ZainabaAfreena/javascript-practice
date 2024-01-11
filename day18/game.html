@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stone paper scissor</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <h1>Stone Paper Scissors</h1>
+    <div class="game">
+      <div class="choice" onclick="mychoice('stone')" id="stone">
+        <img class="img1"
+          src="https://tse4.mm.bing.net/th?id=OIP.CASI0FDZOuHLOSVDYJe4JgHaHa&pid=Api&P=0&h=180"
+        />
+      </div>
+      <div class="choice" onclick="mychoice('paper')" id="paper">
+        <img
+          src="https://tse3.mm.bing.net/th?id=OIP.jzooPvoFxYlEPM8UGE3-YQHaHv&pid=Api&P=0&h=180"
+        />
+      </div>
+      <div class="choice" onclick="mychoice('scissor')" id="scissors">
+        <img
+          src="https://tse3.mm.bing.net/th?id=OIP.Yq5brfMgrfiaRyAAPDfZDAHaHv&pid=Api&P=0&h=180"
+        />
+      </div>
+    </div>
+    <h1 id="disRes"></h1>
+
+    <h1 id="oponent-score">Opp Score: <span id="os">0</span></h1>
+    <img id="oponent-choice">
+    <br>
+    <img id="my-choice">
+    <h1 id="my-score">Your Score: <span id="us">0</span></h1>
+    <button class="btn" onclick="reset()">Reset</button>
+    <!-- <div id="game"></div> -->
+  </body>
+  <script src="game.js"></script>
+</html>

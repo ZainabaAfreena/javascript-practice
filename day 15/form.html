@@ -4,22 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div class="container">
         <header>Registration</header>
-        <form action="#">
+        <form onsubmit="handleSubmit()">
         <div class="form first"> 
             <div class="personal details">
-                <span class="title">Personal Deatils</span>
+                <span class="title">Personal Details</span>
 
 
-                <div class="feilds">
-                    <div class="input-feild">
-                        <label for="Full Name"></label>
-                        <input type="text" placeholder="Enter your name" required>
+                <div class="fields">
+                    <div class="input-field">
+                        <label >Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="firstName" value="Afreena" required>
 
                     </div>
+                    <div class="input-field">
+                        <label>User Id</label>
+                        <input type="text" placeholder="Enter your id" id="Id" value="123" required>
+
+                    </div>
+
+                    <div class="input-field">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email"  id="emailAddress" value="a@gnmail.com" required>
+
+                    </div>
+
+                    <div class="input-field">
+                        <label>Phone Number</label>
+                        <input type="number" placeholder="Enter your number"   id="phoneNumber" value="1234567890" required>
+
+                    </div>
+
+                    <div class="input-field">
+                        <label>Address</label>
+                        <input type="text" placeholder="Enter your Address"  id="Address" value="aa" required>
+
+                    </div>
+
+                    <div class="input-field">
+                        <label>DOB</label>
+                        <input type="date" placeholder="Enter your DOB" id="DOB"  required>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Gender</label>
+                        <input type="radio" value="Male" placeholder="Pleaae select your gender" name="gender" checked >
+                        <input type="radio" value="Female"  placeholder="Pleaae select your gender" name="gender" >
+                        <input type="radio" value="Other" placeholder="Pleaae select your gender" name="gender" >
+                    </div>
+
+                    <div class="input-field">
+                        <label>Language</label>
+                        <input type="checkbox" value="English"  placeholder="Choose Language" name="lang" value="English" >
+                        <input type="checkbox"value="Kannada"  placeholder="Choose Language" name="lang" value="Kannada" >
+                        <input type="checkbox"value="Beary"  placeholder="Choose Language" name="lang" value="Beary" checked>
+                    </div>
+
+                    <div class="input-field">
+                        <label >Course</label>
+                        <select name="course" id="course">
+                            <option value="CSE" checked>CSE</option>
+                            <option value="Civil">Civil</option>
+                            <option value="EC">EC</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label>Message</label>
+                        <input type="text" placeholder="Send Message"  id="Message" value="123"  required>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" class="btntext"/>
+                    </div>
+
 
                 </div>
 
@@ -27,7 +88,21 @@
 
 
         </div>
+        </form>
+        <hr>
+        <h2>Display Result:</h2>
+        <div>Name: <span id="showName"></span></div>
+        <div>Id: <span id="showId"></span></div>
+        <div>Email: <span id="showMail"></span></div>
+        <div>Number: <span id="showNumber"></span></div>
+        <div>Address: <span id="showAddress"></span></div>
+        <div>DOB: <span id="showDob"></span></div>
+        <div>Course: <span id="showCourse"></span></div>
+        <div>Message: <span id="showMessage"></span></div>
+        <div>Gender: <span id="showGender"></span></div>
+        <div>Language: <span id="showLang"></span></div>
 
     </div>
+    <script src="form.js"></script>
 </body>
 </html>
