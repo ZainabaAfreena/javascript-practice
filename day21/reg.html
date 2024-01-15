@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="day21.css">
+    <script>
+        let getData = localStorage.getItem('isLogged');
+        console.log(getData);
+        if(getData === 'true'){
+            window.location = 'wel.html';
+        }
+    </script>
+</head>
+.
+<body>
+    <div class="login">
+        <h1>Register</h1>
+          <form onsubmit="saveData()">
+            <input type="text" id="name"  placeholder="Username" value="afreen" required="required" /><br><br>
+              <input type="password" id="password" placeholder="Password" value="1234" required="required" /><br><br>
+              <button type="submit" class="btn">register</button>
+          </form>
+          <a href="day21.html">login</a>
+      </div>
+</body>
+<script src="day21.js"></script>
+
+
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+    <link rel="stylesheet" href="day21.css">
+    <script>
+        let getData = localStorage.getItem('isLogged');
+        console.log(getData);
+        if(getData !== 'true'){
+            window.location = 'day21.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="intro">
+       <div class="box">
+            <h1>WELCOME <br> <span></span></h1>
+             
+          </div>
+          <button onclick="logOut()">logout</button>
+        </div>
+</body>
+<script src="day21.js"></script>
+<script>showName()</script>
+</html>
